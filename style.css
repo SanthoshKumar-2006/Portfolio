@@ -1,0 +1,269 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*
+{
+  margin :0;
+  padding : 0;
+  box-sizing : border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+body
+{
+  transition : all 0.3s ease;
+  background-color: var(--bgclr);
+  font-family : 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+:root
+{
+  --fontclr : black;
+  --bgclr : white;
+  --addclr :  #E7E8D1;
+  --hoverclr : #009B77;
+  --extclr : #36d0ff;
+}
+header
+{
+  position: fixed;
+}
+header
+{
+  background-color : var(--addclr);
+  width : 100%;
+  height : 80px;
+  display : flex;
+  justify-content : space-between; 
+  align-items: center;
+}
+li,a
+{
+  text-decoration: none;
+  list-style : none;
+  color: var(--fontclr);
+}
+.logo img
+{
+  margin-left: 20px;
+  height: 60px;
+  clip-path: circle(50% at 50% 50%);
+}
+.name
+{
+  position : absolute;
+  left : 12%;
+}
+.link
+{
+  font-size: 20px;
+  margin-right: 20px;
+}
+.link li
+{
+  float: left;
+  padding: 5px;
+}
+.link a:hover
+{
+  color: var(--hoverclr);
+}
+.menu
+{
+  display: none;
+  margin-right: 20px;
+  font-size : 15px;
+}
+.bnrtxt
+{
+  height: 60vh;
+  padding-top: 10%;
+  margin-bottom: 7%;
+}
+.bnrtxt h1,h4
+{
+  margin-top: 10px;
+  text-align: center;
+}
+.wtsap
+{
+  margin-left: center;
+  background-color: var(--hoverclr);
+  color: var(--bgclr);
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-top: 20px;
+}
+.wtsap i
+{
+  padding-right:10px;
+}
+.wtsap:hover
+{
+  background-color: var(--bgclr);
+  color: var(--hoverclr);
+  border: 2px solid var(--hoverclr);
+}
+/* About Content */
+.about
+{
+  text-align: center;
+  margin-top : 60px;
+}
+.about i
+{
+  padding-right: 10px;
+}
+.aboutcnt
+{
+  display: flex;
+  font-size: 10px;
+  margin-top: 50px;
+  margin-left: 60px;
+  justify-content: space-between;
+}
+.aboutcnt img
+{
+  height: 250px;
+  position: relative;
+  right: 10%;
+  top: 10%;
+  z-index: -1;
+}
+/* Projects */
+.projects
+{
+  text-align: center;
+  margin-top: 20px;
+}
+.projects i
+{
+  padding-right: 10px;
+}
+.project img
+{
+  margin-top : 20px;
+  margin-bottom: 20px;
+  height : 250px;
+  border: 2px solid var(--extclr);
+}
+.project p
+{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+/* Contact Area */
+.contact
+{
+  text-align: center;
+  margin-top: 20px;
+}
+.contactcnt i
+{
+  padding: 20px;
+  font-size: 30px;
+}
+
+/* Converting media aQuary*/
+
+@media screen and (max-width:600px)
+{
+  header
+  {
+    height : 50px;
+    width: 100%;
+  }
+  .logo img
+  {
+    margin-left: 10px;
+    height: 30px;
+    clip-path: circle(50% at 50% 50%);
+  }
+  .link
+  {
+     display: none;
+  }
+  .link li
+  {
+    float: none;
+    padding: 5px;
+  }
+  .name
+  {
+    font-size: 15px;
+    position : absolute;
+    left : 15%;
+  }
+  .menu
+  {
+    overflow:hidden;
+    display: block;
+  }
+  .menushow
+  {
+    display: block;
+    position : absolute;
+    width: 100%;
+    background-color: var(--addclr);
+    margin-top: 5%;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  .bnrtxt
+  {
+    height: 30vh;
+    padding-top: 20%;
+  }
+  .bnrtxt h1
+  {
+    font-size: 15px;
+    text-align: center;
+  }
+  .bnrtxt h4
+  {
+    font-size: 10px;
+  }
+  .wtsap
+  {
+    margin-left: center;
+    background-color: var(--hoverclr);
+    color: var(--bgclr);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 10px;
+    margin-top: 20px;
+  }
+  .wtsap i
+  {
+    padding-right:10px;
+  }
+  .wtsap:hover
+  {
+    background-color: var(--bgclr);
+    color: var(--hoverclr);
+    border: 2px solid var(--hoverclr);
+  }
+  .aboutcnt
+  {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+  }
+  .aboutcnt img
+  {
+    height: 200px;
+    position: absolute;
+    right: 20%;
+    top: 40%;
+    opacity: 0.2;
+    z-index: -1;
+  }
+  .project1 img
+  {
+    height: 200px;
+    border: 2px solid var(--extclr);
+  }
+}
